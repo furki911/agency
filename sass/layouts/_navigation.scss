@@ -1,0 +1,124 @@
+.navigation {
+   background-image: linear-gradient(rgba($color-primary, .5),rgba($color-primary, .5)), url('../img/showcase-bg.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   position: relative;
+
+   &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10rem;
+      padding-top: 2rem;
+      font-size: 1.6rem;
+      color: rgb(226, 226, 226);
+
+      @media only screen and (max-width: $bp-big) {
+         flex-direction: column;
+      }
+
+      &__left--logo {
+         font-size: 5rem;
+         font-weight: 900;
+      }
+
+      &__right {
+
+         &--link {
+            display: flex;
+            list-style: none;
+
+            @media only screen and (max-width: $bp-small) {
+               flex-direction: column;
+               align-items: center;
+            }
+
+            & > *:not(:last-child) {
+               margin-right: 1rem;
+
+               @media only screen and (max-width: $bp-small) {
+                  margin-right: 0;
+                  margin-bottom: 1.5rem;
+               }
+   
+            }
+
+
+            &--item:link,
+            &--item:visited {
+               font-size: 1.4rem;
+               font-weight: 600;
+               text-transform: uppercase;
+               text-decoration: none;
+               color: currentColor;
+               padding: 1rem .25rem;
+               border-bottom: 2px solid transparent;
+               transition: all .2s;
+
+               &:hover,
+               &:focus {
+                  border-bottom: 2px solid rgb(226, 226, 226);
+               }
+            }
+         }
+
+         @media only screen and (max-width: $bp-big) {
+            margin-top: 2rem;
+         }
+      }
+   }
+
+   &__bottom {
+      display: flex;
+      text-align: center;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+
+      @media only screen and (max-height: 30em) {
+         height: auto;
+         margin: 20rem 0;
+      }
+
+      &__content {
+         color: #fff;
+         font-size: 8rem;
+         line-height: 1;
+         transform: translateY(-5rem);
+
+         span {
+            display: block;
+            text-transform: uppercase;
+
+            @media only screen and (max-width: $bp-small) {
+               font-size: 5rem;
+            }
+         }
+
+         &--span-1 {
+            font-weight: 600;
+         }
+
+         &--span-2 {
+            font-weight: 1000;
+         }
+
+         &--span-3 {
+            font-weight: 600;
+         }
+         
+      }
+
+      img {
+         width: 40%;
+
+         @media only screen and (max-width: $bp-largest) {
+            width: 0;
+         }
+      }
+   }
+
+
+}

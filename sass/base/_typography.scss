@@ -1,0 +1,10 @@
+%heading {
+   font-weight: 900;
+   color: $color-grey-light-1;
+}
+h1 { font-size: 10rem; @extend %heading;}
+h2 { font-size: 8rem; @extend %heading; }
+h3 { font-size: 6rem; @extend %heading; }
+h4 { font-size: 5rem; @extend %heading; }
+h5 { font-size: 4rem; @extend %heading; }
+h6 { font-size: 2rem; @extend %heading; }

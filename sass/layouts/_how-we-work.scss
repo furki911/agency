@@ -1,0 +1,55 @@
+.how-we-work {
+   position: relative;
+   max-width: 120rem;
+   margin: 0 auto;
+   padding: 10rem 3rem;
+   overflow-x: hidden;
+
+   @media only screen and (max-width: $bp-big) {
+      padding: 10rem 8rem;
+   }
+   
+
+
+   &__content {
+      width: 25%;
+      float: left;
+
+      @media only screen and (max-width: $bp-big) {
+         width: 60%;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+         width: 100%;
+         float: none;
+      }
+   }
+
+   &__paragraph {
+      line-height: 1.6;
+      margin: 3rem 0;
+      font-size: 1.4rem;
+   }
+
+   &__image {
+      width: 70%;
+      height: 20rem;
+      float: right;
+      display: flex;
+
+      
+      @media only screen and (max-width: $bp-big) {
+         display: none;
+      }
+
+      img {
+         width: 33.3337%;
+      }
+
+      &--1,
+      &--2,
+      &--3 {
+         clip-path: polygon(20% 0, 100% 0 , 80% 100%, 0 100%);
+      }
+   }
+}

@@ -1,0 +1,76 @@
+.who-we-are {
+   padding: 8rem 0;
+   max-width: 120rem;
+   margin: 0 auto;
+
+   @media only screen and (max-width: $bp-big) {
+      padding: 0;
+   }
+
+   @media only screen and (max-height: 30em) {
+      padding-top: 0;
+      padding-bottom: 0;
+   }
+
+   &__content {
+      color: $color-grey-light-1;
+      padding: 6rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 120rem;
+      margin: 0 auto;
+      
+      @media only screen and (max-width: $bp-big) {
+         flex-direction: column;
+         padding: 0;
+         padding-bottom: 2rem;
+      }
+
+      @media only screen and (max-width: $bp-smaller) {
+         padding: 0;
+      }
+
+      @media only screen and (max-height: 30em) {
+         padding-top: 0;
+         padding-bottom: 0;
+      }
+
+      &--text {
+         padding: 0 10rem;
+         align-self: start;
+
+         @media only screen and (max-width: $bp-large) {
+            padding: 0 6rem;
+         }
+
+         @media only screen and (max-width: $bp-big) {
+            padding: 10rem;
+         }
+
+         @media only screen and (max-width: $bp-smaller) {
+            padding: 5rem;
+         }
+
+         @media only screen and (max-height: 30em) {
+            padding-top: 0;
+            padding-bottom: 0;
+         }
+
+         &__paragraph {
+            margin: 3rem 0;
+            font-size: 1.4rem;
+            line-height: 1.8;
+            font-weight: 500;
+         }
+      }
+
+      &--img {
+         margin-top: 3rem;
+         
+         @media only screen and (max-width: $bp-smaller) {
+            display: none;
+         }
+      }
+   }
+}

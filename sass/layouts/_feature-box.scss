@@ -1,0 +1,36 @@
+.feature-box {
+   display: grid;
+   grid-template-columns: min-content 1fr;
+   grid-gap: 1rem;
+   align-content: start;
+
+   &__logo {
+      width: 4.5rem;
+      height: 4.5rem;
+      grid-row: 1 / span 2;
+      transform: translateY(-1rem);
+      border-radius: 50%;
+      background-color: $color-primary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      fill: #f7f7f7;
+
+
+      &--img {
+         width: 50%;
+         height: 50%;
+      }
+   }
+
+   &__heading {
+      font-weight: 600;
+   }
+
+   &__paragraph {
+      font-size: 1.4rem;
+      font-weight: 100;
+      line-height: 1.3;
+   }
+
+}
