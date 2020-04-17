@@ -321,6 +321,9 @@ h6 {
     margin: 0 auto;
     display: flex;
     justify-content: center; }
+    @media only screen and (max-width: 31.25em) {
+      .our-team__container {
+        padding: 8rem 2rem; } }
     .our-team__container__image {
       border: 1rem solid #f7f7f7;
       transform: rotate(45deg) scale(0.75);
@@ -400,7 +403,7 @@ h6 {
         flex-direction: column; }
         .testmonials__content > * {
           margin-top: 3rem; } }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .testmonials__content {
         width: 100%;
         margin: 0; } }
@@ -425,7 +428,7 @@ h6 {
       font-style: italic; }
       .testmonials__content__text--paragraph {
         color: #494949;
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         font-weight: 100;
         position: relative; }
         .testmonials__content__text--paragraph::before {
