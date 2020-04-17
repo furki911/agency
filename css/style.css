@@ -227,7 +227,8 @@ h6 {
     grid-gap: 3rem;
     grid-row-gap: 8rem;
     justify-items: center;
-    margin: 0 auto; }
+    margin: 0 auto;
+    color: #000; }
   .what-we-do .side-decor {
     position: absolute;
     right: 0%;
@@ -461,7 +462,7 @@ h6 {
     justify-content: space-evenly;
     margin: 5rem; }
     .footer__contacts__item {
-      font-family: cursive;
+      font-family: arial;
       display: grid;
       grid-template-columns: min-content 1fr;
       grid-template-rows: 1fr repeat(2, min-content);
