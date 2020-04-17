@@ -39,6 +39,10 @@
             opacity: 0;
             backface-visibility: hidden;
             transition: all .5s; 
+
+            @media only screen and (max-width: $bp-smaller) {
+               font-size: 2.3rem;
+            }
          }
 
          img {
