@@ -260,14 +260,14 @@
       </footer>
    </body>
    <script>
-      (function() {
-         var element = document.querySelector('.navigation__top__right--link'); 
+      var element = document.querySelector('.navigation__top__right--link'); 
       function clicked() {
          var flag = window.matchMedia('(max-width: 37.5em)').matches;
          if (flag) {
             element.classList.toggle('disp__none');
          }
       }
-      })();
+
+      (clicked)();
    </script>
 </html>
