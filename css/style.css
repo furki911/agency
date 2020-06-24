@@ -87,7 +87,8 @@ h6 {
         flex-direction: column; } }
     .navigation__top__left--logo {
       font-size: 5rem;
-      font-weight: 900; }
+      font-weight: 900; 
+      cursor: pointer;}
     .navigation__top__right--link {
       display: flex;
       list-style: none; }
