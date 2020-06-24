@@ -512,3 +512,8 @@ h6 {
     margin: 2rem 0;
     font-size: 1.6rem;
     text-align: center; }
+
+
+    .disp__none {
+      display: none;
+    }

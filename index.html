@@ -12,7 +12,7 @@
       <nav class="navigation">
          <div class="navigation__top">
             <div class="navigation__top__left">
-               <span class="navigation__top__left--logo">Agency</span>
+               <span class="navigation__top__left--logo" onclick="clicked()">Agency</span>
             </div>
             <div class="navigation__top__right">
                <ul class="navigation__top__right--link">
@@ -259,4 +259,16 @@
 
       </footer>
    </body>
+   <script>
+      var logo = document.querySelector('.navigation__top__left--logo');
+      var body = document.getElementsByTagName('body')[0];
+      var element = document.querySelector('.navigation__top__right--link');
+      
+      function clicked() {
+         var flag = window.matchMedia('(max-width: 37.5em)').matches;
+         if (flag) {
+            element.classList.toggle('disp__none');
+         }
+      }
+   </script>
 </html>
